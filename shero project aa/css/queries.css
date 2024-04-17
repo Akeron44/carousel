@@ -1,0 +1,76 @@
+@media (max-width: 82em) {
+  html {
+    font-size: 56.25%;
+  }
+  .grid {
+    max-width: 85%;
+  }
+}
+
+@media (max-width: 71em) {
+  html {
+    font-size: 50%;
+  }
+  .grid {
+    max-width: 90%;
+  }
+  .carousel-wrapper {
+    max-width: 90rem;
+  }
+  .carousel-wrapper .carousel {
+    grid-auto-columns: calc((100% / 3) - 1.4rem);
+  }
+}
+
+@media (max-width: 50em) {
+  .grid {
+    max-width: 95%;
+    height: 350vh;
+    gap: 1.2rem;
+    grid-template-rows: 1.5fr 1.5 1.5fr 2fr;
+    grid-template-columns: 1fr;
+  }
+
+  .img-cont_1 {
+    grid-row: 1 / 2;
+  }
+  .flexbox__container {
+    flex-direction: column;
+    gap: 1.6rem;
+  }
+
+  .flexitem-container {
+    flex-direction: row;
+    position: relative;
+    border-bottom: 0.5px solid #111;
+    padding-bottom: 0.8rem;
+    width: 100%;
+  }
+
+  .flexitem-container img {
+    order: -1;
+  }
+
+  .flexitem-container h2 {
+    margin-bottom: 2.4rem;
+    font-size: 1.2rem;
+    text-align: center;
+    width: 100%;
+    align-self: center;
+  }
+
+  .flexitem-container button {
+    position: absolute;
+    bottom: 10%;
+    right: 15%;
+    background-color: #fff;
+    color: #3b5bdb;
+  }
+
+  .carousel-wrapper {
+    max-width: 75rem;
+  }
+  .carousel-wrapper .carousel {
+    grid-auto-columns: calc((100% / 2) - 1.4rem);
+  }
+}
